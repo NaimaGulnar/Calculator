@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(53, 87, 105);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.main-container {
+  background-color: #061b2d;
+  width: 25%;
+  height: auto;
+  margin: 3rem auto;
+  border-radius: 0.7rem;
+  padding: 0.9rem;
+  box-shadow: 11px 11px 20px 0 black;
+}
+.result-container {
+  background-color: #979696;
+  width: 100%;
+  height: 15%;
+  border-radius: 0.7rem;
+  color: black;
+  margin: 2rem 0 3rem 0;
+  padding: 1rem;
+  font-size: 1.5rem;
+  box-shadow: 7px 7px 7px 0 black;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 20px;
+  width: 100%;
+  height: 70%;
+  padding: 0.5rem;
+}
+.box {
+  background-color: #04233f;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+  color: white;
+  border: 2px solid #162a3b;
+  font-size: 1.5rem;
+  padding: 1rem;
+  box-shadow: 5px 5px 5px 0 black;
+}
+.box:hover {
+  cursor: pointer;
+  background-color: #05192b;
+  border: 1px solid #bebebe;
+  box-shadow: 7px 7px 7px 0 black;
+}
+
+/* Media Query */
+@media screen and (max-width: 480px) {
+  .main-container {
+    width: 90%;
+  }
+  .result-container {
+    margin: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+  }
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  }
+  .box {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .main-container {
+    width: 65%;
+  }
+  .result-container {
+    margin: 1rem 0 2rem 0;
+  }
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-container {
+    width: 45%;
+  }
+  .result-container {
+    margin: 1rem 0 2rem 0;
+  }
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  .main-container {
+    width: 33.3%;
+    margin: 1rem auto;
+  }
+  .result-container {
+    margin: 1rem 0 2rem 0;
+  }
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  }
+}
